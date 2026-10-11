@@ -1,0 +1,111 @@
+{
+  "record_kind": "SANITIZED_HISTORICAL_RECORD_NOT_CURRENT_RETEST",
+  "historical_date_utc": "2026-10-08",
+  "scope": "Isolated portable Windows OBS; actual APIs/CEF; no livestream, recording or public deploy",
+  "environment": {
+    "obs": "32.2.2",
+    "browser_plugin": "2.26.9",
+    "cef": "127.0.6533.120",
+    "lua": "5.1",
+    "luajit": "2.1.1736781742"
+  },
+  "core": {
+    "test_type": "Real OBS 32.2.2 / real LuaJIT + untouched PULSE through real obslua property callbacks / actual CEF DOM, not mocks",
+    "finished_at_utc": "2026-10-08T09:13:13.186Z",
+    "checks": [
+      {
+        "name": "Real OBS LuaJIT loads untouched product with real property callbacks",
+        "result": "PASS"
+      },
+      {
+        "name": "Default no target refuses a command; no page update",
+        "result": "PASS"
+      },
+      {
+        "name": "UUID selection and +1 affect only intended source",
+        "result": "PASS"
+      },
+      {
+        "name": "Decrement and reset use actual source-local javascript_event",
+        "result": "PASS"
+      },
+      {
+        "name": "Repeated actual commands remain bounded at 0 and 5",
+        "result": "PASS"
+      },
+      {
+        "name": "Remote URL, non-browser and removed UUID get useful refusal status",
+        "result": "PASS"
+      },
+      {
+        "name": "Default opt-in off export ignores control while actual procedure exists",
+        "result": "PASS"
+      },
+      {
+        "name": "Hidden source refuses commands, then shows unchanged without queue replay",
+        "result": "PASS"
+      },
+      {
+        "name": "Actual OBS Browser Source page reload preserves stored level",
+        "result": "PASS"
+      }
+    ]
+  },
+  "follow_up": {
+    "restart": {
+      "result": "PASS",
+      "method": "Normal WM_CLOSE, same isolated portable config reopened without reseeding scene or source settings; actual CEF DOM and real product button",
+      "finished_at_utc": "2026-10-08T09:11:19.704Z"
+    },
+    "script_reload": {
+      "result": "PASS",
+      "method": "Actual OBS Tools/Scripts Reload via native UIAutomation; exact selected isolated driver; actual product source, obslua and CEF DOM",
+      "finished_at_utc": "2026-10-08T09:16:43.379Z"
+    },
+    "source_removal": {
+      "result": "PASS",
+      "method": "Real obs_sceneitem_remove in isolated scene; subsequent real product button",
+      "finished_at_utc": "2026-10-08T09:16:46.258Z"
+    }
+  },
+  "keyboard": {
+    "result": "PASS_USER_CONFIRMED",
+    "independently_observed_by_agent": false,
+    "scope": "User-confirmed short presses in the focused isolated OBS window; increase twice, decrease once, reset once",
+    "sequence": [
+      {
+        "combo": "Ctrl+Alt+F8",
+        "presses": 2,
+        "expected_level": 2
+      },
+      {
+        "combo": "Ctrl+Alt+F9",
+        "presses": 1,
+        "expected_level": 1
+      },
+      {
+        "combo": "Ctrl+Alt+F10",
+        "presses": 1,
+        "expected_level": 0
+      }
+    ],
+    "not_run": [
+      "automated SendInput delivery",
+      "long hold and OS auto-repeat",
+      "background application hotkeys",
+      "other OBS versions or operating systems"
+    ]
+  },
+  "automated_keyboard": {
+    "result": "NOT_RUN",
+    "events_sent": 0
+  },
+  "public_deployment_verified": false,
+  "redactions": [
+    "host paths",
+    "source/instance UUIDs",
+    "UIAutomation references",
+    "screenshots",
+    "personal conversation text"
+  ]
+}

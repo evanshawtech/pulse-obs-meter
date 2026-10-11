@@ -1,0 +1,104 @@
+{
+  "timestamp": "2026-10-08T09:02:21.277Z",
+  "runtime": "v24.15.0",
+  "browserTested": false,
+  "obsTested": false,
+  "method": "Embedded application JavaScript in Node VM with a minimal DOM stub. No layout or real browser APIs are verified.",
+  "checks": [
+    {
+      "name": "Embedded JavaScript parses and initializes defaults",
+      "result": "PASS",
+      "method": "Node VM + DOM stub"
+    },
+    {
+      "name": "100 rapid mixed actions match an independent oracle after every action",
+      "result": "PASS",
+      "method": "Node VM + DOM stub"
+    },
+    {
+      "name": "100 increments/100 decrements stay at bounds; all supported key variants",
+      "result": "PASS",
+      "method": "Node VM + DOM stub"
+    },
+    {
+      "name": "Entering 5 triggers one extra effect; decreasing/reset clears it",
+      "result": "PASS",
+      "method": "Node VM + DOM stub"
+    },
+    {
+      "name": "Text editing and modifier keys do not change the score",
+      "result": "PASS",
+      "method": "Node VM + DOM stub"
+    },
+    {
+      "name": "Control buttons clamp and disable; open/close and repeat-C behavior",
+      "result": "PASS",
+      "method": "Node VM + DOM stub"
+    },
+    {
+      "name": "Title, small label, color and reduced-motion configuration persist",
+      "result": "PASS",
+      "method": "Node VM + DOM stub"
+    },
+    {
+      "name": "Malformed saved data, null boot, arrays and out-of-range values are safe",
+      "result": "PASS",
+      "method": "Node VM + DOM stub"
+    },
+    {
+      "name": "Blocked storage leaves session controls functional and warning visible",
+      "result": "PASS",
+      "method": "Node VM + DOM stub"
+    },
+    {
+      "name": "System and explicit reduced-motion preferences suppress the effect",
+      "result": "PASS",
+      "method": "Node VM + DOM stub"
+    },
+    {
+      "name": "Accessible score and label update with state",
+      "result": "PASS",
+      "method": "Node VM + DOM stub"
+    },
+    {
+      "name": "OBS commands need explicit true opt-in, OBS runtime and non-preview mode",
+      "result": "PASS",
+      "method": "Node VM + DOM stub"
+    },
+    {
+      "name": "OBS commands share bounds, reset, persistence and reduced-motion logic without keyboard focus",
+      "result": "PASS",
+      "method": "Node VM + DOM stub"
+    },
+    {
+      "name": "Malformed OBS events cannot change state or configuration",
+      "result": "PASS",
+      "method": "Node VM + DOM stub"
+    },
+    {
+      "name": "OBS opt-in toggles immediately, persists and can be disabled",
+      "result": "PASS",
+      "method": "Node VM + DOM stub"
+    },
+    {
+      "name": "Lua companion payloads match HTML commands and only dispatch to the named fixed event",
+      "result": "PASS",
+      "method": "Node VM + DOM stub"
+    },
+    {
+      "name": "Portable export retains optional OBS listener and opt-in with a fresh independent instance",
+      "result": "PASS",
+      "method": "Node VM + DOM stub"
+    },
+    {
+      "name": "Portable export embeds current config/state with fresh ID and escaped text",
+      "result": "PASS",
+      "method": "Node VM + DOM stub"
+    },
+    {
+      "name": "Static offline audit: no external resource elements or network APIs; restrictive CSP",
+      "result": "PASS",
+      "method": "Node VM + DOM stub"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+# Generated development output; never publish local runtime state.
+evidence/source-test-report.json
+evidence/test-report.json
+evidence/browser-profile-*/
+evidence/downloads/
+evidence/*.png
+__pycache__/
+*.pyc
+node_modules/
+.env
+.env.*
+*.sqlite
+*.db
+*.log
+_review/
+private-release-records/

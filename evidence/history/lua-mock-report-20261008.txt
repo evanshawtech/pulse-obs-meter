@@ -1,0 +1,16 @@
+Using an existing OBS-provided LuaJIT library; host path omitted; mock tests only
+Lua runtime: Lua 5.1 / LuaJIT 2.1.1736781742; mock tests only; real OBS APIs are not exercised
+PASS No target is chosen or commanded on load; no default key bindings
+PASS Three exact fixed commands target only the chosen source UUID
+PASS Held key repeats and key release cannot double-apply a command
+PASS Missing, wrong-type, remote and non-showing targets safely refuse
+PASS UUID survives rename and never retargets by a reused source name
+PASS Changing target does not send commands and only affects later actions
+PASS Hidden-source commands are not queued or replayed when showing resumes
+PASS Missing APIs and absent handler/procedure fail without leaked references
+PASS Procedure errors release all owned objects without automatic retry
+PASS UI buttons use the same target, validation and fixed commands
+PASS Source refresh lists only browsers with UUID values and preserves missing target
+PASS Hotkey load/save releases arrays; unload unregisters all callbacks
+
+12 Lua mock groups passed with Lua 5.1. OBS and LuaJIT bindings were not run.
